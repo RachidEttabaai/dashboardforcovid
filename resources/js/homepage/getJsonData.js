@@ -110,7 +110,6 @@ function checkNews(newscontent) {
 function apirequest(url) {
 
     $.getJSON(url,
-             {format:"json"},
              function(data) {
 
                 let news = data.articles;
