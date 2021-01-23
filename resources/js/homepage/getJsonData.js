@@ -109,14 +109,37 @@ function checkNews(newscontent) {
  */
 function apirequest(url) {
 
-    $.getJSON(url,
-             function(data) {
+    // $.getJSON(url,
+    //          {format:"json"},
+    //          function(data) {
 
-                let news = data.articles;
+    //             let news = data.articles;
 
-                checkNews(news);
-            }
-    );
+    //             checkNews(news);
+    //         }
+    // );
+
+    let settings = {
+        "dataType": "jsonp",
+        "crossDomain": true,
+        "url": url,
+        "method": "GET",
+        "headers": {
+            "Accept": "application/json",
+            "Access-Control-Allow-Origin":"*"
+        },
+        "xhrFields": {
+            "withCredentials": true,
+            "cors":false
+        }
+    }
+
+    $.ajax(settings).done(function(data) {
+
+        let news = data.articles;
+
+        checkNews(news);
+    });
 
 }
 
