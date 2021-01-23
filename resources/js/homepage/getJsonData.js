@@ -131,15 +131,18 @@ function apirequest(url) {
         "xhrFields": {
             "withCredentials": true,
             "cors":true
+        },
+        "success":function(data) {
+
+            let news = data.articles;
+    
+            console.log(news);
+    
+            checkNews(news);
         }
     }
 
-    $.ajax(settings).done(function(data) {
-
-        let news = data.articles;
-
-        checkNews(news);
-    });
+    $.ajax(settings);
 
 }
 
