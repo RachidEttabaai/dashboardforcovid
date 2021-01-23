@@ -125,12 +125,12 @@ function apirequest(url) {
         "url": url,
         "method": "GET",
         "headers": {
-            "accept": "application/json",
+            "Accept": "application/json",
             "Access-Control-Allow-Origin":"*"
         },
         "xhrFields": {
             "withCredentials": true,
-            "cors":true
+            "cors":false
         }
     }
 
