@@ -120,9 +120,7 @@ function apirequest(url) {
     // );
 
     let settings = {
-        'cache': false,
-        'dataType': "jsonp",
-        "async": true,
+        "dataType": "jsonp",
         "crossDomain": true,
         "url": url,
         "method": "GET",
