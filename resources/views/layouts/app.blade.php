@@ -11,7 +11,7 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary border-bottom">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ route('home') }}">
                 <em class="fa fa-globe" aria-hidden="true"></em>
                 COVID19 Dashboard
             </a>
