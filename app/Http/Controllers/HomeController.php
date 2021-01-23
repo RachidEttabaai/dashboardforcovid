@@ -8,8 +8,7 @@ class HomeController extends Controller
 {
     public function show()
     {
-        $countries = new Apicalling("https://restcountries.eu/rest/v2/all");
-        dd($countries);
+        $countries = (new Apicalling("https://restcountries.eu/rest/v2/all"))->apirequest();
         return view("home",compact("countries"));
     }
 }
