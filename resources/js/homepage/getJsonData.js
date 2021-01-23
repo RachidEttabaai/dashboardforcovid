@@ -119,22 +119,24 @@ function apirequest(url) {
     //         }
     // );
 
-    $.ajax({
-        method:"GET",
-        url:url,
-        async: true,
-        crossDomain: true,
-        dataType:"jsonp",
-        headers:{
+    let settings = {
+        'cache': false,
+        'dataType': "jsonp",
+        "async": true,
+        "crossDomain": true,
+        "url": url,
+        "method": "GET",
+        "headers": {
             "accept": "application/json",
             "Access-Control-Allow-Origin":"*"
-        },
-        success: function(data) {
-
-            let news = data.articles;
-    
-            checkNews(news);
         }
+    }
+
+    $.ajax(settings).done(function(data) {
+
+        let news = data.articles;
+
+        checkNews(news);
     });
 
 }
