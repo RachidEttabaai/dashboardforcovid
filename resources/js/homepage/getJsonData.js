@@ -120,12 +120,11 @@ function apirequest(url) {
     // );
 
     let settings = {
-        "dataType": "jsonp",
+        "dataType": "json",
         "crossDomain": true,
         "url": url,
         "method": "GET",
         "headers": {
-            "Accept": "application/json",
             "Access-Control-Allow-Origin":"*"
         },
         "xhrFields": {
