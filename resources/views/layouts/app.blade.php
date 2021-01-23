@@ -4,7 +4,6 @@
     <title>COVID19 Dashboard @yield('title')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
   </head>
