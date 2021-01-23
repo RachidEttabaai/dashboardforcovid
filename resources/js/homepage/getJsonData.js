@@ -109,7 +109,24 @@ function checkNews(newscontent) {
  */
 function apirequest(url) {
 
-    $.getJSON(url, function(data) {
+    // $.getJSON(url,
+    //          {format:"json"},
+    //          function(data) {
+
+    //             let news = data.articles;
+
+    //             checkNews(news);
+    //         }
+    // );
+
+    $.ajax({
+        method:"GET",
+        url:url,
+        dataType:"json",
+        beforeSend: function( xhr ) {
+            xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+        }
+    }).done( function(data) {
 
         let news = data.articles;
 
