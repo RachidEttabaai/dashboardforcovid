@@ -122,15 +122,14 @@ function apirequest(url) {
     $.ajax({
         method:"GET",
         url:url,
+        crossDomain: true,
         dataType:"json",
-        beforeSend: function( xhr ) {
-            xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+        success: function(data) {
+
+            let news = data.articles;
+    
+            checkNews(news);
         }
-    }).done( function(data) {
-
-        let news = data.articles;
-
-        checkNews(news);
     });
 
 }
