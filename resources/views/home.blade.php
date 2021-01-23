@@ -19,7 +19,7 @@
                 <select class="custom-select" id="select-country">
                     <option value="none" selected>Choose...</option>
                     @forelse($countries as $country)
-                        <option value="">{{ $country->name }}</option>
+                        <option value="">{{ $country["name"] }}</option>
                     @empty
                         <option value="none">Error on loading countries list</option>
                     @endforelse
