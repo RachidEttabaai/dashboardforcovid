@@ -129,7 +129,6 @@ function apirequest(url) {
             "Access-Control-Allow-Origin":"*"
         },
         "xhrFields": {
-            "withCredentials": true,
             "cors":true
         },
         "success":function(data) {
