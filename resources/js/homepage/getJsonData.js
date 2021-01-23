@@ -129,6 +129,9 @@ function apirequest(url) {
         "headers": {
             "accept": "application/json",
             "Access-Control-Allow-Origin":"*"
+        },
+        "xhrFields": {
+            "withCredentials": true
         }
     }
 
