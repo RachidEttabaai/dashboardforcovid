@@ -130,7 +130,7 @@ function apirequest(url) {
         },
         "xhrFields": {
             "withCredentials": true,
-            "cors":false
+            "cors":true
         }
     }
 
