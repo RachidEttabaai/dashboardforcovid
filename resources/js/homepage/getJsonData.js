@@ -122,8 +122,13 @@ function apirequest(url) {
     $.ajax({
         method:"GET",
         url:url,
+        async: true,
         crossDomain: true,
-        dataType:"json",
+        dataType:"jsonp",
+        headers:{
+            "accept": "application/json",
+            "Access-Control-Allow-Origin":"*"
+        },
         success: function(data) {
 
             let news = data.articles;
