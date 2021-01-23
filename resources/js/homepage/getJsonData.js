@@ -128,9 +128,6 @@ function apirequest(url) {
             "Accept": "application/json",
             "Access-Control-Allow-Origin":"*"
         },
-        "xhrFields": {
-            "cors":true
-        },
         "success":function(data) {
 
             let news = data.articles;
