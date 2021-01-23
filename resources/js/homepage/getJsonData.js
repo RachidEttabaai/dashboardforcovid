@@ -1,5 +1,5 @@
 let $ = require("jquery");
-
+require("./jquery.xdomainajax");
 /**
  * Check if a content is null or not
  * @param {string} content
@@ -116,7 +116,6 @@ function apirequest(url) {
 
         checkNews(news);
     });
-
 
 }
 
