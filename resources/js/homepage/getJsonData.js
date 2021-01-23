@@ -150,10 +150,10 @@ function apirequest(url) {
 export function getJsonData(optionselected) {
 
     if (optionselected == "none") {
-        let apiurl = "http://newsapi.org/v2/top-headlines?country=&q=covid&apiKey=f6ee46b1b01d42a9b9e3a3fdc6cfe32b";
+        let apiurl = "https://newsapi.org/v2/top-headlines?country=&q=covid&apiKey=f6ee46b1b01d42a9b9e3a3fdc6cfe32b";
         apirequest(apiurl);
     } else {
-        let apiurl = "http://newsapi.org/v2/top-headlines?country=" + optionselected + "&q=covid&apiKey=f6ee46b1b01d42a9b9e3a3fdc6cfe32b";
+        let apiurl = "https://newsapi.org/v2/top-headlines?country=" + optionselected + "&q=covid&apiKey=f6ee46b1b01d42a9b9e3a3fdc6cfe32b";
         apirequest(apiurl);
     }
 
