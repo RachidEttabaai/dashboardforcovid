@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,"show"])->name("home");
+Route::get("/",[HomeController::class,"show"])->name("home");
+
+Route::post("/jsondata",[ApiController::class,"jsondata"])->name("jsondata");

@@ -120,20 +120,15 @@ function apirequest(url) {
     // );
 
     let settings = {
-        "dataType": "jsonp",
-        "crossDomain": true,
-        "url": url,
-        "method": "GET",
-        "headers": {
-            "Accept": "application/json",
-            "Access-Control-Allow-Origin":"*"
-        },
+        "method": "POST",
+        "url": "{{ route('jsondata') }}",
+        "data": {"url":url},
         "success":function(data) {
 
             let news = data.articles;
-    
+
             console.log(news);
-    
+
             checkNews(news);
         }
     }
