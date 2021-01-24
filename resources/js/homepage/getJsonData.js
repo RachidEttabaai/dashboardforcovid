@@ -119,11 +119,17 @@ function apirequest(url) {
     //         }
     // );
 
-    let settings = {
-        "method": "POST",
-        "url": "{{ route('jsondata') }}",
-        "data": {"url":url},
-        "success":function(data) {
+    $.ajaxSetup({
+        headers:{
+            "X-CSRF-TOKEN": $("meta[name='csrf-token']").attr("content")
+        }
+    });
+
+    $.ajax({
+        type: "POST",
+        url: "/jsondata",
+        data: {url:url},
+        success:function(data) {
 
             let news = data.articles;
 
@@ -131,9 +137,7 @@ function apirequest(url) {
 
             checkNews(news);
         }
-    }
-
-    $.ajax(settings);
+    });
 
 }
 
