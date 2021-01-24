@@ -133,7 +133,7 @@ function apirequest(url) {
 
             let news = data.articles;
 
-            console.log(news);
+            //console.log(news);
 
             checkNews(news);
         }
