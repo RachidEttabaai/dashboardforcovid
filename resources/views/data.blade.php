@@ -92,7 +92,7 @@
 
                 <h2>Summary per country</h2>
 
-                {{--  <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("m/d/Y H:i") }}</em>  --}}
+                <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("m/d/Y H:i") }}</em>
 
                 <table id="summarypercountry" class="display nowrap" style="width:100%">
                     <thead>
@@ -166,7 +166,7 @@
     
     </div>
 
-    @endif  --}}
+    @endif  }}
         
 </main>
 

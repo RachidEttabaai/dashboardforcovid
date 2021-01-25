@@ -28,7 +28,7 @@ class DataController extends Controller
         $errorsresults = $this->keyexistinarray("Message", $summaries);
         //dd($errorsresults);
 
-        return view("datas",compact("globalresults","countriesresults","errorsresults"));
+        return view("data",compact("globalresults","countriesresults","errorsresults"));
 
     }
 }
