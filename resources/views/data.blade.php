@@ -13,18 +13,6 @@
 @section("content")
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
 
-
-        <div class="container text-center mb-2">
-            <div class="row mb-2">
-                <div class="col">
-                    <div class="alert alert-danger" role="alert">
-                        {{ $errorsresults }}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     <div class="container text-center mb-2">
         <div class="row mb-2">
             <div class="col">
@@ -68,7 +56,7 @@
                         New recovered :
                         <strong>
                             <em class="text-success">
-                                {{ $globalresults["NewRecovered "] }}
+                                {{ $globalresults["NewRecovered"] }}
                             </em>
                         </strong>
                     </li>
