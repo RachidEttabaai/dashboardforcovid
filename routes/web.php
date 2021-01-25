@@ -18,6 +18,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get("/",[HomeController::class,"show"])->name("home");
 
-Route::get("/data",[DataController::class,"show"])->name("data");
+Route::get("/data",[DataController::class,"show"])->name("datas");
 
 Route::post("/jsondata",[ApiController::class,"jsondata"])->name("jsondata");

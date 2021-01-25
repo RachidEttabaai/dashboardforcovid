@@ -31,7 +31,7 @@
                 <div class="sidebar-sticky pt-4">
                     <ul class="nav flex-column text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('data') }}">
+                            <a class="nav-link" href="{{ route('datas') }}">
                                 Data
                                 <em class="fa fa-database" aria-hidden="true"></em>
                             </a>
