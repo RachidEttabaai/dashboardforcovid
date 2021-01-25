@@ -63,7 +63,7 @@
                     <li class="list-group-item">
                         Total recovered :
                         <strong>
-                            <em class="text-success">{{ $globalresults["TotalRecovered "] }}</em>
+                            <em class="text-success">{{ $globalresults["TotalRecovered"] }}</em>
                         </strong>
                     </li>
                 </ul>
