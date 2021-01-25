@@ -27,7 +27,7 @@
 
     @endif
 
-    @if($errorsresults == "")  --}}
+    @if($errorsresults == "")
 
     <div class="container text-center mb-2">
         <div class="row mb-2">
@@ -166,7 +166,7 @@
     
     </div>
 
-    {{--  @endif  --}}
+    @endif  --}}
         
 </main>
 
