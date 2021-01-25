@@ -78,8 +78,7 @@
 
                 <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("d/m/Y H:i") }}</em>
 
-                <div class="table-responsive">
-                    <table id="summarypercountry" class="table display nowrap" style="width:100%">
+                    <table id="summarypercountry" class="display nowrap" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -144,7 +143,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                </div>
 
             </div>
         

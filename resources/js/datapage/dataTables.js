@@ -1,16 +1,14 @@
 let $ = require("jquery");
 
 import "datatables.net/js/jquery.dataTables.min.js";
-require("datatables.net-fixedheader")(window,$);
-require("datatables.net-responsive")(window,$);
+import "datatables.net-fixedheader/js/dataTables.fixedHeader.min.js";
+import "datatables.net-responsive/js/dataTables.responsive.min.js";
 
 $(document).ready(function() {
 
-    $('#summarypercountry').DataTable({
+    let table = $('#summarypercountry').DataTable({
         responsive: true
     });
 
-    new $.fn.dataTable.FixedHeader($('#summarypercountry').DataTable({
-        responsive: true
-    }));
+    new $.fn.dataTable.FixedHeader(table);
 });
