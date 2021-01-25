@@ -24,7 +24,7 @@ class DataController extends Controller
         $globalresults = $this->keyexistinarray("Global", $summaries);
         //dd($globalresults);
         $countriesresults = $this->keyexistinarray("Countries", $summaries);
-        dd($countriesresults);
+        //dd($countriesresults);
         $errorsresults = $this->keyexistinarray("Message", $summaries);
         dd($errorsresults);
 
