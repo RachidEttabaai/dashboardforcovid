@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    @yield('stylesheet')
   </head>
   <body>
 
@@ -28,7 +29,7 @@
                 <div class="sidebar-sticky pt-4">
                     <ul class="nav flex-column text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('data') }}">
                                 Data
                                 <em class="fa fa-database" aria-hidden="true"></em>
                             </a>

@@ -4,6 +4,10 @@
 - Home
 @endsection
 
+@section("stylesheet")
+
+@endsection
+
 @section("content")
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
 
