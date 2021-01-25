@@ -19,7 +19,7 @@
             <div class="row mb-2">
                 <div class="col">
                     <div class="alert alert-danger" role="alert">
-                        {{ $errorsresults["message"] }}
+                        {{ $errorsresults["Message"] }}
                     </div>
                 </div>
             </div>
