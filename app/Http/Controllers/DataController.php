@@ -20,6 +20,7 @@ class DataController extends Controller
     public function show()
     {
         $summaries = (new Apicalling("https://api.covid19api.com/summary"))->apirequest();
+        dd($summaries);
         $globalresults = $this->keyexistinarray("Global", $summaries);
         $countriesresults = $this->keyexistinarray("Countries", $summaries);
         $errorsresults = $this->keyexistinarray("message", $summaries);
