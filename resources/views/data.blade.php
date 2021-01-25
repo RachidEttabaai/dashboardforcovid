@@ -25,7 +25,9 @@
             </div>
         </div>
 
-    @else
+    @endif
+
+    @if($errorsresults->count() == 0)
 
     <div class="container text-center mb-2">
         <div class="row mb-2">
