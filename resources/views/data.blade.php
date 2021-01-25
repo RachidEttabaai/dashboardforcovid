@@ -13,7 +13,6 @@
 @section("content")
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
 
-    {{--  @if($errorsresults != "")
 
         <div class="container text-center mb-2">
             <div class="row mb-2">
@@ -25,9 +24,6 @@
             </div>
         </div>
 
-    @endif
-
-    @if($errorsresults == "")
 
     <div class="container text-center mb-2">
         <div class="row mb-2">
@@ -166,7 +162,6 @@
     
     </div>
 
-    @endif  }}
         
 </main>
 
