@@ -19,7 +19,7 @@
 
                 <h2>Global Summary</h2>
 
-                <em class="text-muted">API data updated on {{ date("m/d/Y H:i") }}</em>
+                <em class="text-muted">API data updated on {{ date("d/m/Y H:i") }}</em>
 
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -76,7 +76,7 @@
 
                 <h2>Summary per country</h2>
 
-                <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("m/d/Y H:i") }}</em>
+                <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("d/m/Y H:i") }}</em>
 
                 <table id="summarypercountry" class="display nowrap" style="width:100%">
                     <thead>

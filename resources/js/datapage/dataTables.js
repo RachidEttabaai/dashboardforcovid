@@ -1,6 +1,6 @@
 let $ = require("jquery");
 
-require("datatables.net")(window,$);
+import "datatables.net/js/jquery.dataTables.min.js";
 require("datatables.net-fixedheader")(window,$);
 require("datatables.net-responsive")(window,$);
 
