@@ -78,72 +78,74 @@
 
                 <em class="text-muted">API data updated on {{ \Carbon\Carbon::parse($countriesresults[0]["Date"])->format("d/m/Y H:i") }}</em>
 
-                <table id="summarypercountry" class="display nowrap" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>New confirmed</th>
-                            <th>Total confirmed</th>
-							<th>New deceased</th>
-                            <th>Total deceased</th>
-							<th>New recovered</th>
-							<th>Total recovered</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($countriesresults as $countryresults)
+                <div class="table-responsive">
+                    <table id="summarypercountry" class="table display nowrap" style="width:100%">
+                        <thead>
                             <tr>
-                                <td>
-                                    <img src="https://www.countryflags.io/{{ $countryresults['CountryCode'] }}/flat/32.png" title="{{ $countryresults['Country'] }}"/>
-									{{ $countryresults["Country"] }}
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-warning">
-                                            {{ $countryresults["NewConfirmed"] }}
-                                        </em>
-                                    </strong>
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-warning">
-                                            {{ $countryresults["TotalConfirmed"] }}
-                                        </em>
-                                    </strong>
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-danger">
-                                            {{ $countryresults["NewDeaths"] }}
-                                        </em>
-                                    </strong>
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-danger">
-                                            {{ $countryresults["TotalDeaths"] }}
-                                        </em>
-                                    </strong>
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-success">
-                                            {{ $countryresults["NewRecovered"] }}
-                                        </em>
-                                    </strong>
-                                </td>
-                                <td>
-                                    <strong>
-                                        <em class="text-success">
-                                            {{ $countryresults["TotalRecovered"] }}
-                                        </em>
-                                    </strong>
-                                </td>
+                                <th>Name</th>
+                                <th>New confirmed</th>
+                                <th>Total confirmed</th>
+                                <th>New deceased</th>
+                                <th>Total deceased</th>
+                                <th>New recovered</th>
+                                <th>Total recovered</th>
                             </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            
+                        </thead>
+                        <tbody>
+                            @foreach($countriesresults as $countryresults)
+                                <tr>
+                                    <td>
+                                        <img src="https://www.countryflags.io/{{ $countryresults['CountryCode'] }}/flat/32.png" title="{{ $countryresults['Country'] }}"/>
+                                        {{ $countryresults["Country"] }}
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-warning">
+                                                {{ $countryresults["NewConfirmed"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-warning">
+                                                {{ $countryresults["TotalConfirmed"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-danger">
+                                                {{ $countryresults["NewDeaths"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-danger">
+                                                {{ $countryresults["TotalDeaths"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-success">
+                                                {{ $countryresults["NewRecovered"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <strong>
+                                            <em class="text-success">
+                                                {{ $countryresults["TotalRecovered"] }}
+                                            </em>
+                                        </strong>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         
         </div>
