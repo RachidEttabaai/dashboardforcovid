@@ -2,4 +2,4 @@ require('./bootstrap');
 
 require('./homepage/news');
 
-require('./datapage/dataTable');
+require('./datapage/dataTables');
