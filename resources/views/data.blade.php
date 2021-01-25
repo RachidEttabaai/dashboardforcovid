@@ -82,12 +82,9 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>New confirmed</th>
-                                <th>Total confirmed</th>
-                                <th>New deceased</th>
-                                <th>Total deceased</th>
-                                <th>New recovered</th>
-                                <th>Total recovered</th>
+                                <th>New | Total confirmed</th>
+                                <th>New | Total deceased</th>
+                                <th>New | Total recovered</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -103,8 +100,7 @@
                                                 {{ $countryresults["NewConfirmed"] }}
                                             </em>
                                         </strong>
-                                    </td>
-                                    <td>
+                                        |
                                         <strong>
                                             <em class="text-warning">
                                                 {{ $countryresults["TotalConfirmed"] }}
@@ -117,8 +113,7 @@
                                                 {{ $countryresults["NewDeaths"] }}
                                             </em>
                                         </strong>
-                                    </td>
-                                    <td>
+                                        |
                                         <strong>
                                             <em class="text-danger">
                                                 {{ $countryresults["TotalDeaths"] }}
@@ -131,8 +126,7 @@
                                                 {{ $countryresults["NewRecovered"] }}
                                             </em>
                                         </strong>
-                                    </td>
-                                    <td>
+                                        |
                                         <strong>
                                             <em class="text-success">
                                                 {{ $countryresults["TotalRecovered"] }}
