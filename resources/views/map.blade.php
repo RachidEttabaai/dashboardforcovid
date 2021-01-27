@@ -18,7 +18,7 @@
 					@foreach($countriesresults as $countryresults)
 						<template tid="map-legend" id="{{ $countryresults['CountryCode'] }}" class="d-block mx-auto rounded">
 							<div class="col mx-auto">
-								<img class="flag-icon h4 d-block mx-auto rounded" src="https://www.countryflags.io/{{ result.CountryCode }}/flat/32.png" title="{{ result.Country }}"/>
+								<img class="flag-icon h4 d-block mx-auto rounded" src="https://www.countryflags.io/{{ $countryresults['CountryCode'] }}/flat/32.png" title="{{ $countryresults['Country'] }}"/>
 								<div>
 									<span class="h5">{{ $countryresults["Country"] }}</span>
 									<p>
@@ -76,7 +76,7 @@
 
 			</div>
 
-        
+
 </main>
 
 @endsection
