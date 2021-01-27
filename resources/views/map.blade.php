@@ -22,7 +22,7 @@
 								<div>
 									<span class="h5">{{ $countryresults["Country"] }}</span>
 									<p>
-										<em class="text-muted">{{ \Carbon\Carbon::parse($countriesresults["Date"])->format("d/m/Y H:i") }}</em>
+										<em class="text-muted">{{ \Carbon\Carbon::parse($countryresults["Date"])->format("d/m/Y H:i") }}</em>
 									</p>
 								</div>
 								<table>
