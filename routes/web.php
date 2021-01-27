@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,7 @@ use App\Http\Controllers\HomeController;
 Route::get("/",[HomeController::class,"show"])->name("home");
 
 Route::get("/data",[DataController::class,"show"])->name("datas");
+
+Route::get("/map",[MapController::class,"show"])->name("maps");
 
 Route::post("/jsondata",[ApiController::class,"jsondata"])->name("jsondata");
