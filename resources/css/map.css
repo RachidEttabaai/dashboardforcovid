@@ -1,9 +1,13 @@
+head {
+    height:100%;
+}
+
 .map-container {
-    height: 600px;
+    height: 300px;
 }
 
 .jvmap-smart {
-    width: 100%;
+    position:absolute;
     height: 100%;
 }
 
