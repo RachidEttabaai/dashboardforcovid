@@ -4,4 +4,4 @@ require('./homepage/news');
 
 require('./datapage/dataTables');
 
-require('./mappage/map')
+require('./mappage/map');
