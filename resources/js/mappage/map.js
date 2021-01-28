@@ -1,13 +1,13 @@
 let $ = require("jquery");
 
 require('jvectormap-next')($);
-$.fn.vectorMap('addMap', 'world-merc', require('jvectormap-content/world-merc'));
+$.fn.vectorMap('addMap', 'world-mill', require('jvectormap-content/world-mill'));
 $.noConflict();
 
 $(document).ready(function() {
 
     $("#world-map-markers").vectorMap({
-        map: 'world-merc',
+        map: 'world-mill',
         backgroundColor: 'transparent',
         normalizeFunction: 'polynomial',
         hoverOpacity: 0.7,
