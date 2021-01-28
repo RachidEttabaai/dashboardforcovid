@@ -24,5 +24,5 @@ $(document).ready(function() {
         }
     });
 
-    $('#world-map-markers').vectorMap('get','mapObject').updateSize();
+    false
 });
