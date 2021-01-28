@@ -1,5 +1,8 @@
 let $ = require("jquery");
 
+let mountNode = $('[data-preview="jvectormap-next"] [data-testid="mountNode"]');
+mountNode.empty().css('height', 600);
+
 require('jvectormap-next')($);
 $.fn.vectorMap('addMap', 'world-mill', require('jvectormap-content/world-mill'));
 $.noConflict();
