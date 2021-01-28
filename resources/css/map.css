@@ -1,5 +1,9 @@
-.map-container {
-    height: 300px;
+head {
+    height:100%;
+}
+#map {
+    position:absolute;
+    height:100%;
 }
 
 .jvmap-smart {
