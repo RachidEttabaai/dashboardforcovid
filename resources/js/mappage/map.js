@@ -1,7 +1,7 @@
 let $ = require("jquery");
 
 require('jvectormap-next')($);
-$.fn.vectorMap('addMap', 'world_mill', require('jvectormap-content/world-mill'));
+$.fn.vectorMap('addMap', 'world_mill', require('jvectormap-content/world-mill')($));
 $.noConflict();
 
 $(document).ready(function() {
