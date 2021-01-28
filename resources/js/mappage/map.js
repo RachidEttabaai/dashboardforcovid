@@ -1,7 +1,7 @@
 let $ = require("jquery");
 
-let mountNode = $('[data-preview="jvectormap-next"] [data-testid="mountNode"]');
-mountNode.empty().css('height', 600);
+let $mountNode = $("#world-map-markers");
+$mountNode.empty().css('height', 600);
 
 require('jvectormap-next')($);
 $.fn.vectorMap('addMap', 'world-mill', require('jvectormap-content/world-mill'));
@@ -9,7 +9,7 @@ $.noConflict();
 
 $(document).ready(function() {
 
-    $("#world-map-markers").vectorMap({
+    $mountNode.vectorMap({
         map: 'world-mill',
         backgroundColor: 'transparent',
         normalizeFunction: 'polynomial',
@@ -19,7 +19,6 @@ $(document).ready(function() {
             initial: {
                 fill: '#F8E23B',
                 stroke: '#383f47',
-                height: 600
             }
         },
         backgroundColor: '#006994',
