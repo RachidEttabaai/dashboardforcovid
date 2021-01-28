@@ -18,7 +18,8 @@ $(document).ready(function() {
         markerStyle: {
             initial: {
                 fill: '#F8E23B',
-                stroke: '#383f47'
+                stroke: '#383f47',
+                height: 600
             }
         },
         backgroundColor: '#006994',
