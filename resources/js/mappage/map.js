@@ -23,4 +23,6 @@ $(document).ready(function() {
             el.html(popup);
         }
     });
+
+    $('#world-map-markers').vectorMap('get','mapObject').updateSize();
 });
