@@ -5,7 +5,7 @@
 @endsection
 
 @section("stylesheet")
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.css" type="text/css" media="screen"/>
 @endsection
 
 @section("content")
