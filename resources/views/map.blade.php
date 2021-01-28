@@ -70,7 +70,7 @@
 					@endforeach
 				</div>
 
-				<div class="map-container" id="map">
+				<div class="map-container">
 					<div id="world-map-markers" class="jvmap-smart"></div>
 				</div>
 
