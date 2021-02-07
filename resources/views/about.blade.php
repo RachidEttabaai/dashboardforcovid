@@ -6,12 +6,6 @@
 
 @section("content")
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4">About</h1>
-        </div>
-    </div>
-
     <div class="container text-center mb-2">
 
         <h2>
