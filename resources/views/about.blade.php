@@ -18,7 +18,7 @@
             <li class="list-group-item">
                 You can send me an email to
                 <a href="mailto:ettabaai.rachid@gmail.com">
-                    <em class="fa fa-paper-plane" aria-hidden="true"></em>
+                    <em class="fa fa-paper-plane fa-lg" aria-hidden="true"></em>
                 </a>
             </li>
         </ul>
