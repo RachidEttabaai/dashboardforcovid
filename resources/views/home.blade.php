@@ -21,7 +21,7 @@
                     <label class="input-group-text" for="select-country">Filter by country</label>
                 </div>
                 <select class="custom-select" id="select-country">
-                    <option value="none" selected>Choose...</option>
+                    <option value="none" selected="selected">Choose...</option>
                     @foreach($countries as $country)
                         <option value="{{ $country['ISO2'] }}" >{{ $country["Country"] }}</option>
                     @endforeach
