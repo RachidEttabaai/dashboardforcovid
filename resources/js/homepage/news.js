@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     if ($("#select-country").length) {
 
-        $("#select-country").html($("#select-country").find("option:not([value='none'])").sort(function(x, y) {
+        $("#select-country").html($("#select-country").find("option:not(:eq(0))").sort(function(x, y) {
             return $(x).text() > $(y).text() ? 1 : -1;
         }));
 
