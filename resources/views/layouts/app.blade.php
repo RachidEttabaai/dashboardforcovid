@@ -62,10 +62,12 @@ use App\Http\Controllers\AboutController;
                 &copy; 2021 - All rights reserved -
                 <a href="https://github.com/RachidEttabaai" target="_blank" title="my GitHub profile">
                     <em class="fa fa-github" aria-hidden="true"></em>
-                </a
+                </a>
+                -
                 <a href="https://gitlab.com/rachid_ettabaai" target="_blank" title=" my GitLab profile">
                     <em class="fa fa-gitlab" aria-hidden="true"></em>
-                </a> -
+                </a> 
+                -
                 <a href="https://www.linkedin.com/in/rachid-ettabaai/" target="_blank" title="my LinkedIn profile">
                     <em class="fa fa-linkedin-square" aria-hidden="true"></em>
                 </a>
