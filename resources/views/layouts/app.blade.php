@@ -1,3 +1,4 @@
+use App\Http\Controllers\AboutController;
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
@@ -43,7 +44,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('about') }}">
                                 About
                                 <em class="fa fa-info-circle" aria-hidden="true"></em>
                             </a>
@@ -58,7 +59,16 @@
     <footer class="footer mt-auto py-3 border-top">
         <div class="container text-center">
             <span class="text-muted">
-                &copy; 2021 - All rights reserved
+                &copy; 2021 - All rights reserved -
+                <a href="https://github.com/RachidEttabaai" target="_blank" title="my GitHub profile">
+                    <em class="fa fa-github" aria-hidden="true"></em>
+                </a
+                <a href="https://gitlab.com/rachid_ettabaai" target="_blank" title=" my GitLab profile">
+                    <em class="fa fa-gitlab" aria-hidden="true"></em>
+                </a> -
+                <a href="https://www.linkedin.com/in/rachid-ettabaai/" target="_blank" title="my LinkedIn profile">
+                    <em class="fa fa-linkedin-square" aria-hidden="true"></em>
+                </a>
             </span>
         </div>
     </footer>

@@ -13,7 +13,7 @@
 
     <div class="container text-center mb-2">
 
-        <h2>News</h2>
+        <h2>COVID News</h2>
 
         <form id="newsfilter">
             <div class="input-group mb-3">

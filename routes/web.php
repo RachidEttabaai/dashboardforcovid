@@ -5,6 +5,7 @@ use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MapController;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +23,7 @@ Route::get("/",[HomeController::class,"show"])->name("home");
 Route::get("/data",[DataController::class,"show"])->name("datas");
 
 Route::get("/map",[MapController::class,"show"])->name("maps");
+
+Route::get("/about",[AboutController::class,"show"])->name("about");
 
 Route::post("/jsondata",[ApiController::class,"jsondata"])->name("jsondata");
