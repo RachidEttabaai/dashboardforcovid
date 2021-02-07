@@ -62,11 +62,11 @@
                 <a href="https://github.com/RachidEttabaai" target="_blank" title="my GitHub profile">
                     <em class="fa fa-github fa-lg" aria-hidden="true"></em>
                 </a>
-                -
+                &nbsp;
                 <a href="https://gitlab.com/rachid_ettabaai" target="_blank" title=" my GitLab profile">
                     <em class="fa fa-gitlab fa-lg" aria-hidden="true"></em>
                 </a> 
-                -
+                &nbsp;
                 <a href="https://www.linkedin.com/in/rachid-ettabaai/" target="_blank" title="my LinkedIn profile">
                     <em class="fa fa-linkedin-square fa-lg" aria-hidden="true"></em>
                 </a>
