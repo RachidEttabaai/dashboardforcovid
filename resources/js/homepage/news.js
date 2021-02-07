@@ -6,10 +6,6 @@ $(document).ready(function() {
 
     if ($("#select-country").length) {
 
-        $("#select-country").html($("#select-country").find("option").sort(function(x, y) {
-            return $(x).text() < $(y).text() ? 1 : -1;
-        }));
-
         let countrySelected = $("#select-country option:selected").val();
 
         getJsonData(countrySelected);
