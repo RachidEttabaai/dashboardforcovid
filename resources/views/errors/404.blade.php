@@ -9,7 +9,7 @@
 @endsection
 
 @section("content")
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
+<main role="main" class="col-md-9 ml-sm-auto col-lg-12 mt-4">
 
     <div class="container text-center mb-2">
 
