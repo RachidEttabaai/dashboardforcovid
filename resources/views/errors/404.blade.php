@@ -10,12 +10,19 @@
   <body>
 
     <div class="container-fluid">
-        <div class="alert alert-danger text-center">
-            <h2 class="display-3">404</h2>
-            <p class="display-5">Oops! Something is wrong. The page you requested was not found.</p>
-        </div>
+        <main role="main" class="mainbox col-md-9 ml-sm-auto col-lg-10">
+
+            <div class="container text-center mb-2">
+                <div class="err">4</div>
+                <em class="far fa-question-circle fa-spin"></em>
+                <div class="err2">4</div>
+                <div class="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place? and try from there.</p>
+            </div>
+        </main>
+    
     </div>
 
     <script src="{{ secure_asset('js/app.js') }}" async></script>
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous" async></script>
   </body>
 </html>
