@@ -17,7 +17,7 @@
             <li class="list-group-item">This website was designed by ETTABAAI Rachid</li>
             <li class="list-group-item">
                 You can send me an email to
-                <a href="mailto:ettabaai.rachid@gmail.com">
+                <a href="mailto:ettabaai.rachid@gmail.com" target="_blank" title="click on the link to send me an email">
                     <em class="fa fa-paper-plane fa-lg" aria-hidden="true"></em>
                 </a>
             </li>
