@@ -9,13 +9,19 @@
 @endsection
 
 @section("content")
-<main role="main" class="mainbox col-md-9 ml-sm-auto col-lg-10">
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
 
     <div class="container text-center mb-2">
-        <div class="err">4</div>
-        <em class="far fa-question-circle fa-spin"></em>
-        <div class="err2">4</div>
-        <div class="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place? and try from there.</p>
+
+        <div class="alert alert-danger text-center">
+            <div class="err">4</div>
+            <em class="far fa-question-circle fa-spin"></em>
+            <div class="err2">4</div>
+            <div class="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place? and try from there.</p>
+        </div>
+
     </div>
+
+    
 </main>
 @endsection

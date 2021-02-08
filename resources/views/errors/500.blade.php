@@ -1,21 +1,26 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <title>COVID19 Dashboard - 500 Error</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  <body>
+@extends("layouts.error")
 
-    <div class="container-fluid">
+@section("title")
+- 500 Error
+@endsection
+
+@section("stylesheet")
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+@endsection
+
+@section("content")
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 mt-4">
+
+    <div class="container text-center mb-2">
+
         <div class="alert alert-danger text-center">
-            <h2 class="display-3">500</h2>
-            <p class="display-5">Oops! Something is wrong. Server Error.</p>
+            <div class="err">5</div>
+            <em class="far fa-question-circle fa-spin"></em>
+            <em class="far fa-question-circle fa-spin"></em>
+            <div class="msg">Server Error</p>
         </div>
+
     </div>
 
-    <script src="{{ secure_asset('js/app.js') }}" async></script>
-  </body>
-</html>
+</main>
+@endsection
