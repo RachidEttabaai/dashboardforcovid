@@ -13,18 +13,18 @@
     "devDependencies": {
         "axios": "^0.21",
         "bootstrap": "^4.0.0",
+        "datatables.net": "^1.10.21",
+        "datatables.net-fixedheader": "^3.1.7",
+        "datatables.net-responsive": "^2.2.7",
         "jquery": "^3.2",
+        "jvectormap-content": "^0.1.0",
+        "jvectormap-next": "^3.1.1",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "postcss": "^8.1.14",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
-        "sass-loader": "^8.0.0",
-        "datatables.net": "^1.10.21",
-        "datatables.net-fixedheader": "^3.1.7",
-        "datatables.net-responsive": "^2.2.7",
-        "jvectormap-content": "^0.1.0",
-        "jvectormap-next": "^3.1.1"
+        "sass-loader": "^8.0.0"
     }
 }
