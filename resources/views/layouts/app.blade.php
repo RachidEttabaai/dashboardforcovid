@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A dashboard for covid19 disease worldwide">
     <link rel="canonical" href="https://dashboardforcovid.herokuapp.com/" />
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" rel="stylesheet" >
     @if (Request::path() == "/")
 	    <meta name="csrf-token" content="{{ csrf_token() }}" />
     @endif
@@ -67,7 +67,7 @@
                 &nbsp;
                 <a href="https://gitlab.com/rachid_ettabaai" target="_blank" title=" my GitLab profile">
                     <em class="fa fa-gitlab fa-lg" aria-hidden="true"></em>
-                </a> 
+                </a>
                 &nbsp;
                 <a href="https://www.linkedin.com/in/rachid-ettabaai/" target="_blank" title="my LinkedIn profile">
                     <em class="fa fa-linkedin-square fa-lg" aria-hidden="true"></em>
@@ -76,6 +76,6 @@
         </div>
     </footer>
 
-    <script src="{{ secure_asset('js/app.js') }}" async></script>
+    <script src="{{ asset('js/app.js') }}" async></script>
   </body>
 </html>
